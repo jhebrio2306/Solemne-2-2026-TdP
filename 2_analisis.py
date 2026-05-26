@@ -19,7 +19,6 @@ beneficiarios_por_año = df.groupby('Año').size()
 for año, count in beneficiarios_por_año.items():
     print(f"   {año}: {count:,} registros")
 
-# Gráfico de barras: Evolución anual
 plt.figure(figsize=(10, 6))
 beneficiarios_por_año.plot(kind='bar', color='#D62728', edgecolor='white')
 plt.title('Evolución de Beneficiarios del Programa Social (2019-2023)', fontsize=14, pad=15)
